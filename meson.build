@@ -1,5 +1,5 @@
 project('libgudev', 'c',
-  version: '237',
+  version: '238',
   license: 'LGPLv2.1+',
   meson_version: '>= 0.53.0',
   default_options: [
@@ -41,7 +41,7 @@ vapidir = join_paths(datadir, 'vala', 'vapi')
 cc = meson.get_compiler('c')
 
 glib_req = '>= 2.38.0'
-libudev_req = '>= 199'
+libudev_req = '>= 251'
 
 glib_dep = dependency('glib-2.0', version: glib_req)
 gobject_dep = dependency('gobject-2.0', version: glib_req)
